@@ -6,8 +6,8 @@ namespace Tercero
     {
         static decimal Division(decimal dividendo, decimal divisor){
             //voy restandole diferenciales y sumandolos hasta que llegue a cero
-            //depende cuanta presición se quiere se cambia el diferencial (hay que tener cuidado con stack overflow!)
-            return (dividendo<=(decimal)0.001) ? 0: (decimal)0.001 + Division((dividendo-divisor*(decimal)0.001), divisor);
+            //depende cuanta precisión se quiere se cambia el diferencial (hay que tener cuidado con stack overflow!)
+            return (dividendo<=(decimal)0.01) ? 0: (decimal)0.01 + Division((dividendo-divisor*(decimal)0.01), divisor);
 
             //PROBLEMA A RESOLVER:  redondea algo mal cuando se acerca al diferencial
         }
