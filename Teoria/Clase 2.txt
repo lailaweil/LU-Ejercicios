@@ -1,0 +1,102 @@
+Cuando utilizo new guardo en el Heap(dinámico)
+Sino en Stack
+
+continue: corta el while pero dsp sigue a la siguiente iteracion
+break
+
+var : decide que variable utilizar
+
+
+struct: puede contener funciones
+
+para nuevo struct llamado Persona por ejemplo
+
+struct Persona{
+    public string Nombre;
+
+    public string Apellido;
+
+    public long Sueldo;
+}
+Persona persona = new Persona();
+persona.Nombre = "Laila"
+
+por ejemplo...
+
+tmb se puede
+var nuevaPersona = new Persona();
+
+o tmb..
+var otraPersona = new Persona{
+    Nombre = "Laila",
+    Apellido = "Weil",
+    Sueldo = 100
+}
+
+tmb
+
+enum TipoDeEmpleado {
+    Empleado,
+    LU,
+    Contratado
+}
+
+struct Persona{
+    public string Nombre;
+
+    public string Apellido;
+
+    public long Sueldo;
+
+    public TipoDeEmpleado Tipo;
+}
+
+var p = new Persona();
+p.Tipo = TipoDeEmpleado.LU
+
+se puede definir funciones con el mismo nombre y el compilador decide cual llamar depende
+de como la llamo y con que parametros.
+por ejemplo;
+static int Suma(int a , int b){
+    
+}
+
+static int Suma(int a , int b, int c){
+    
+}
+
+static double Suma(double a , double b){
+    
+}
+
+static int Suma(params int[] a){ //cualquier cantidad de parametros
+    return 
+}
+int suma = Suma(1,2,3,4,5,6,7,8,9); por ejemplo
+
+tambien podes devolver mas cosas que una sola
+ejemplo
+static int HacerAlgo (int a , int b, out int capricho){ //se puede poner cuantos out quiera
+    capricho = 13;
+    return a;
+}
+
+int cap;
+var r = HacerAlgo(1,2, out cap );
+Tambien estan las funciones que se llaman a si mismas
+
+Recursividad
+static int Sumatoria(int numero){
+
+    if(numero == 0){
+        return 0;
+    }else{
+        return numero + Sumatoria(numero-1);
+    }
+}
+o mejor mal elegante poner
+static int Sumatoria(int numero){
+
+    return (numero == 0) ? 0 : numero + Sumatoria(numero-1);
+}
+
