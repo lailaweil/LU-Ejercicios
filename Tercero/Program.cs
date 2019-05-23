@@ -7,9 +7,9 @@ namespace Tercero
         static decimal Division(decimal dividendo, decimal divisor){
             //voy restandole diferenciales y sumandolos hasta que llegue a cero
             //depende cuanta presición se quiere se cambia el diferencial (hay que tener cuidado con stack overflow!)
-            return (dividendo<=0) ? 0: (decimal)0.01 + Division((dividendo-divisor*(decimal)0.01), divisor);
+            return (dividendo<=(decimal)0.001) ? 0: (decimal)0.001 + Division((dividendo-divisor*(decimal)0.001), divisor);
 
-            //PROBLEMA A RESOLVER: redondea para arriba (Ej, 1/3 es 0.333 y nos da 0.34)
+            //PROBLEMA A RESOLVER:  redondea algo mal cuando se acerca al diferencial
         }
         static void Main(string[] args)
         {
