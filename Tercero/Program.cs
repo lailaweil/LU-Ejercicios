@@ -5,11 +5,16 @@ namespace Tercero
     class Program
     {
         static decimal Division(decimal dividendo, decimal divisor){
-            //voy restandole diferenciales y sumandolos hasta que llegue a cero
-            //depende cuanta precisión se quiere se cambia el diferencial (hay que tener cuidado con stack overflow!)
-            return (dividendo<=(decimal)0.01) ? 0: (decimal)0.01 + Division((dividendo-divisor*(decimal)0.01), divisor);
-
-            //PROBLEMA A RESOLVER:  redondea algo mal cuando se acerca al diferencial
+            
+            if (divisor == 0)
+            {
+                Console.WriteLine("No se puede dividir por cero");
+                throw new Exception();
+            }
+            //Con Decimal
+            //return (dividendo<(decimal)0.1*divisor) ? 0: (decimal)0.1 + Division((dividendo-divisor*(decimal)0.1), divisor);
+            //Sin Decimal
+            return (dividendo < divisor) ? 0 : 1 + Division((dividendo - divisor), divisor);
         }
         static void Main(string[] args)
         {
