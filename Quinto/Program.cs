@@ -16,7 +16,6 @@ namespace Quinto
         {
             int opcion;
             while(true){
-                Console.Clear();
                 Console.WriteLine("***********MENU***********");
                 Console.WriteLine("1) Nueva agenda");
                 Console.WriteLine("2) Cargar agenda existente");
@@ -30,7 +29,6 @@ namespace Quinto
                     var agendaNueva = new Agenda(path);
 
                     while(true){
-                        Console.Clear();
                         Console.WriteLine("***********MENU***********");
                         Console.WriteLine("1) Agregar agenda existente");
                         Console.WriteLine("2) Agregar nuevo contacto");
@@ -85,7 +83,7 @@ namespace Quinto
                     var agendaVieja = new Agenda(path);
                     agendaVieja.Leer(path);
                     while(true){
-                        Console.Clear();
+                        // Console.Clear();
                         Console.WriteLine("***********MENU***********");
                         Console.WriteLine("1) Agregar agenda existente");
                         Console.WriteLine("2) Agregar nuevo contacto");
@@ -187,7 +185,7 @@ class Agenda{
     public void Imprimir(){
         foreach(var item in AgendaTel){
             Console.WriteLine("Nombre: "+ item.Key.ToString());
-            Console.WriteLine("Teléfono: ",item.Value.ToString());
+            Console.WriteLine("Teléfono: " + item.Value.ToString());
             Console.WriteLine("-------------------------------------");
         }
     }
