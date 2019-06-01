@@ -15,6 +15,7 @@ namespace PersonRepository
             ValidateAdd(personRepository);
             ValidateUpdate(personRepository);
             ValidateDelete(personRepository);
+            ValidateRange(personRepository);
             ValidateFilters(personRepository);
             ValidateGet(personRepository);
 
@@ -198,7 +199,7 @@ namespace PersonRepository
             };
 
             if (personRepository.GetCountRangeAges(5, 16) != 2 ||
-                personRepository.GetCountRangeAges(2, 4) != 2 ||
+                personRepository.GetCountRangeAges(2, 14) != 2 ||
                 personRepository.GetCountRangeAges(25, 26) != 0)
             {
                 throw new Exception("No se obtuvo el rango correcto");

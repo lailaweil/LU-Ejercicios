@@ -1,0 +1,21 @@
+using (var a= new sw()){
+
+
+    ...
+}
+la clase que usa using tiene que ser IDisposable como un stream.
+lo que hace es asegurar que se cierre luego de hacer lo que esta ahi.
+
+**BUENA PRACTICA: siempre que una clase use IDisposable hay que usar using
+
+ienumerable es la inerfaz que implemetna enumerator osea se puedehacer un foreach. se puede recorrer
+iqueriable guarda la query en algun lugar pero no lo pone en lista 
+lazy loading no lo cargo hasta que lo necesito
+
+where                                                      vs     findAll
+no esta en memoria devuelve un ienumerable/iqueriable             esta en memoria x que devuelve una lista
+
+
+firstordefault te tira el primero de el predicado
+single es tiene que haber solo uno sino explota
+any devuelve true o false si algun elemento cumple con el predicado
