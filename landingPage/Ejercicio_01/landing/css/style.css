@@ -1,0 +1,23 @@
+*{
+    background-color: lightslategray;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: inline;
+}
+table{
+    text-align: left;
+}
+thead th{
+    font-weight: bolder;
+}
+
+tbody th{
+    font-weight: 100;
+}
+tfoot th{
+    font-weight: bold;
+}
+
