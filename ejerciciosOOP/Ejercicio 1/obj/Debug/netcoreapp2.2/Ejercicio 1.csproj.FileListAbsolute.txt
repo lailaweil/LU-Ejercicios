@@ -1,0 +1,4 @@
+c:\Users\Laila\Google Drive\Lagash\Lagash University\C sharp\ejerciciosOOP\Ejercicio 1\obj\Debug\netcoreapp2.2\Ejercicio 1.csprojAssemblyReference.cache
+c:\Users\Laila\Google Drive\Lagash\Lagash University\C sharp\ejerciciosOOP\Ejercicio 1\obj\Debug\netcoreapp2.2\Ejercicio 1.csproj.CoreCompileInputs.cache
+c:\Users\Laila\Google Drive\Lagash\Lagash University\C sharp\ejerciciosOOP\Ejercicio 1\obj\Debug\netcoreapp2.2\Ejercicio 1.AssemblyInfoInputs.cache
+c:\Users\Laila\Google Drive\Lagash\Lagash University\C sharp\ejerciciosOOP\Ejercicio 1\obj\Debug\netcoreapp2.2\Ejercicio 1.AssemblyInfo.cs

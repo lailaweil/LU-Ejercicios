@@ -79,9 +79,11 @@ namespace PersonValidator
         public Dictionary<int, string[]> GroupEmailByNameCount()
         {
             Dictionary<int, string[]> EmailPorCantidad = new Dictionary<int, string[]>();
-            for(int i=0; i<=5; i++){
+            for(int i=0; i<=10; i++){
                 List<Person> PersonasPorNombre = this.People.FindAll(per => per.Name.Split(' ').Count()==i);
-                EmailPorCantidad.Add(i, PersonasPorNombre.Select(per => per.Email).ToArray());
+                if(PersonasPorNombre.Count != 0){
+                    EmailPorCantidad.Add(i, PersonasPorNombre.Select(per => per.Email).ToArray());
+                }
             }
             return EmailPorCantidad;
         }
