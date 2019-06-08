@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans HK', sans-serif;
+}
+header{
+    text-align: center;
+    margin: 25px;
+}
+
+
+#container{
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+#opciones{
+    display: inline-block;
+    width: 50vh;
+    /* margin: 5vh; */
+}
+.btn{
+    list-style: none;
+    width: 30vh;
+    height: 8vh;
+    margin:2vh;    
+    /* background-color */
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
